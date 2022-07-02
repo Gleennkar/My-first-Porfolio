@@ -184,6 +184,7 @@ button {
   width: 288px;
   line-height: 24px;
   padding-left: 24px;
+  padding-top: 10px;
 }
 
 .About h3 {
@@ -228,7 +229,7 @@ button {
 }
 
 .skills .bar3 {
-  padding-right: 230px;
+  padding-right: 235px;
   padding-bottom: 15px;
 }
 
