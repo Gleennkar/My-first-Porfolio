@@ -312,6 +312,19 @@ button:active {
   padding-bottom: 40px;
 }
 
+.contact-form h2 {
+  font-size: 37px;
+  line-height: 52px;
+  color: #fff;
+}
+
+.contact-form p {
+  width: 266px;
+  font-size: 21px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
 
 .form {
   margin-top: 35px;
