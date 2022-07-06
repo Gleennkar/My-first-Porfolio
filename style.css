@@ -1,6 +1,10 @@
 * {
   padding: 0;
   margin: 0;
+
+  /* max-width: 100%; */
+
+  /* overflow-x: hidden; */
   font-family: 'Poppins', sans-serif;
 }
 
@@ -85,15 +89,19 @@ h3 {
 
 .works-container {
   display: grid;
-  gap: 10px;
+  gap: 21px;
   padding: 0;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 106%;
 }
 
 .works-container > div {
   background-color: white;
   border-radius: 20px;
-  padding: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px;
   margin: 20px;
+  margin-right: 37px;
 }
 
 .works-container ol {
@@ -281,10 +289,80 @@ button:active {
   align-items: center;
   display: flex;
   padding: 10px;
-  width: 254px;
+  width: 223px;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   color: #253858;
+}
+
+.contact-form {
+  background-color: #6070ff;
+  border-radius: 70px 0 0 0;
+  background-image: url(./Images/contactformshapes-mobile@2x.png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-attachment: scroll;
+  background-size: contain;
+  background-position-x: 125px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+
+.form {
+  margin-top: 35px;
+}
+
+.form li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#name {
+  border-radius: 8px;
+  width: 128%;
+  padding: 11px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+}
+
+#email {
+  border-radius: 7px;
+  width: 128%;
+  padding: 11px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  
+}
+
+#msg {
+  border-radius: 7px;
+  width: 128%;
+  padding: 11px;
+}
+
+.button{
+    width: 50%;
+    color: #6070ff;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    margin-top: 16px;
+    border-radius: 7px;
+}
+
+.form ul {
+  margin-right: 84px;
 }
