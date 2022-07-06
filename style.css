@@ -355,7 +355,6 @@ button:active {
   line-height: 20px;
   margin-bottom: 10px;
   border: 1px solid white;
-  
 }
 
 #msg {
@@ -364,16 +363,16 @@ button:active {
   padding: 11px;
 }
 
-.button{
-    width: 50%;
-    color: #6070ff;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-    margin-top: 16px;
-    border-radius: 7px;
+.button {
+  width: 50%;
+  color: #6070ff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin-top: 16px;
+  border-radius: 7px;
 }
 
 .form ul {
