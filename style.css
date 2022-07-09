@@ -55,6 +55,12 @@ body {
   margin-left: 24px;
   padding-top: 65px;
   padding-bottom: 60px;
+  animation-name: headline h1;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: 5s;
+  animation-direction: alternate;
 }
 
 .headline p {
@@ -599,3 +605,36 @@ button:active {
     padding-inline: 100px;
   }
 }
+
+@keyframes h2 {
+  0% {
+    background-color: white;
+    left: 0;
+    right: 0;
+  }
+
+  25% {
+    background-color: white;
+    left: 200px;
+    right: 0;
+  }
+
+  50% {
+    background-color: white;
+    left: 200px;
+    right: 200px;
+  }
+
+  75% {
+    background-color: white;
+    left: 0;
+    right: 200px;
+  }
+
+  100% {
+    background-color: white;
+    left: 0;
+    right: 0;
+  }
+}
+
