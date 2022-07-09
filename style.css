@@ -1,8 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-
-  /* max-width: 100%; */
+  max-width: 100%;
 
   /* overflow-x: hidden; */
   font-family: 'Poppins', sans-serif;
@@ -92,7 +91,7 @@ h3 {
   gap: 21px;
   padding: 0;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 106%;
+  grid-template-columns: 100%;
 }
 
 .works-container > div {
@@ -467,16 +466,15 @@ button:active {
 
   .works-container > div {
     margin: 26px;
-    margin-right: 100px;
-    margin-left: 54px;
+    margin-left: 9%;
   }
 
   .btn1 {
-    margin-bottom: 100px;
+    margin-bottom: 67px;
   }
 
   .btn2 {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   .img2 {
@@ -573,7 +571,7 @@ button:active {
   }
 
   .skill-img {
-    width: 86%;
+    width: 63%;
   }
 }
 
