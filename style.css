@@ -55,7 +55,8 @@ body {
   margin-left: 24px;
   padding-top: 65px;
   padding-bottom: 60px;
-  animation-name: headline h1;
+  position: relative;
+  animation-name: h1;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-delay: 2s;
