@@ -13,6 +13,9 @@
 - npm
 - Screenshot of My Portfolio.JPG
 
+## Live Demo
+
+- Live demo link: [Portfolio] https://gleennkar.github.io/My-first-Porfolio/
 
 
 ## Getting Started
