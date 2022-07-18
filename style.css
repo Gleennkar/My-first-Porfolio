@@ -1,3 +1,4 @@
+/* Deleting default styling */
 * {
   padding: 0;
   margin: 0;
@@ -5,6 +6,11 @@
 
   /* overflow-x: hidden; */
   font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -60,7 +66,7 @@ body {
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-delay: 2s;
-  animation-iteration-count: 5s;
+  animation-iteration-count: 5;
   animation-direction: alternate;
 }
 
@@ -108,7 +114,9 @@ h3 {
   /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   padding: 10px;
   margin: 20px;
-  margin-right: 37px;
+
+  /* margin-right: 37px; */
+  margin-top: 45px;
 }
 
 .works-container ol {
@@ -314,7 +322,7 @@ button:active {
   align-items: center;
   background-attachment: scroll;
   background-size: contain;
-  background-position-x: 125px;
+  background-position-x: 157px;
   padding-top: 100px;
   padding-bottom: 40px;
 }
@@ -335,6 +343,7 @@ button:active {
 
 .form {
   margin-top: 35px;
+  margin-right: -79px;
 }
 
 .form li {
@@ -637,4 +646,48 @@ button:active {
     left: 0;
     right: 0;
   }
+}
+
+.overlay {
+  height: 114%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(95, 98, 240, 0.9);
+  backdrop-filter: blur(6px);
+  overflow-x: hidden;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+}
+
+.overlay a {
+  padding: 4px;
+  text-decoration: none;
+  font-size: 26px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: -6px;
+  right: 8px;
+  font-size: 39px;
+  font-weight: 100;
 }
