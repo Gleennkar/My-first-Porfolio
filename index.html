@@ -10,20 +10,33 @@
 <body>
     <header class="header">
              <a href="#">Gleen</a>
-          
 
-        <nav>
-            <img src="./Images/Union.png" alt="hamburger">
-        
-            <ul class="desktop-links">
-                <li><a href="#Portfolio">Portfolio</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+             <div class="menu">
+            
+                <div id="myNav" class="overlay">
+              
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              
+                  <div class="overlay-content">
+                      <a href="#Portfolio">Portfolio</a>
+                      <a href="#About">About</a>
+                      <a href="#Contact">Contact</a>
+                  </div>
+               </div>
+              
+              <nav>
+               <span onclick="openNav()"><img src="./Images/Union.png"  alt="hamburger"></span>
+              
+               <ul class="desktop-links">
+                   <li><a href="#Portfolio">Portfolio</a></li>
+                   <li><a href="#About">About</a></li>
+                   <li><a href="#Contact">Contact</a></li>
+               </ul>
+              </nav>
+            </div>
+        </header>
 
-    <section class="headline">
+    <section class="headline" id="Portfolio">
         <h1>I’m Gleen Glad to see you!</h1>
         <p>I’m a software developer! I can help you 
             build a product , feature or website Look 
@@ -192,7 +205,7 @@
 
     </section>
 
-    <section class="About">
+    <section class="About" id="About">
         <div>
         <h2>About <br> Myself</h2>
 
@@ -269,7 +282,7 @@
     </div>
     </section>
 
-     <section class="contact-form">
+     <section id="Contact" class="contact-form">
       <h2>Contact me</h2>
       <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
       
@@ -296,5 +309,7 @@
    
 
 </section>
+ 
+   <script src="./js/index.js"></script>
 </body>
 </html>
