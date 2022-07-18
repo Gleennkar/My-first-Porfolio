@@ -680,8 +680,8 @@ button:active {
 
 .overlay .closebtn {
   position: absolute;
-  top: -19px;
+  top: -6px;
   right: 8px;
-  font-size: 28px;
+  font-size: 39px;
   font-weight: 100;
 }
