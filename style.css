@@ -112,7 +112,7 @@ h3 {
   border-radius: 20px;
 
   /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-  padding: 10px;
+  padding: 18px;
   margin: 20px;
 
   /* margin-right: 37px; */
@@ -400,6 +400,18 @@ button:active {
   display: none;
 }
 
+.desktop-links {
+  display: none;
+}
+
+.img2 {
+  display: none;
+}
+
+.img3 {
+  display: none;
+}
+
 @media (min-width: 475px) {
   body {
     width: 100vw;
@@ -411,18 +423,6 @@ button:active {
     justify-content: center;
     align-items: center;
   }
-}
-
-.desktop-links {
-  display: none;
-}
-
-.img1 {
-  display: none;
-}
-
-.img3 {
-  display: none;
 }
 
 @media (min-width: 768px) {
@@ -690,4 +690,67 @@ button:active {
   right: 8px;
   font-size: 39px;
   font-weight: 100;
+}
+
+.bg-modal {
+  background-color: rgba(193, 199, 208, 0.8);
+  position: absolute;
+  top: 0;
+  display: none;
+  padding: 14px;
+  margin-right: 1px;
+  margin-left: -38px;
+}
+
+.modal-contents {
+  /* height: 300px; */
+
+  /* width: 500px; */
+  background-color: white;
+
+  /* text-align: center; */
+  padding: 20px;
+  position: relative;
+  border-radius: 19px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 42px;
+  color: #333;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.modal-contents h2 {
+  margin-top: -26px;
+}
+
+.modal-contents .skill-img {
+  margin-left: 0;
+  margin-bottom: 14px;
+}
+
+.popup-btn {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.bg-modal .btn2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-left: 22px;
+  gap: 14px;
+}
+
+.modal-contents p {
+  /* width: 251px; */
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
 }

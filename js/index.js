@@ -7,3 +7,11 @@ function openNav() {
 function closeNav() {
   document.getElementById('myNav').style.width = '0%';
 }
+
+document.getElementById('cardButton').addEventListener('click', () => {
+  document.querySelector('.bg-modal').style.display = 'flex';
+});
+
+document.querySelector('.close').addEventListener('click', () => {
+  document.querySelector('.bg-modal').style.display = 'none';
+});
