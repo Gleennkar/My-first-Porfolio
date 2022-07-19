@@ -8,8 +8,10 @@ function closeNav() {
   document.getElementById('myNav').style.width = '0%';
 }
 
-document.getElementById('cardButton').addEventListener('click', () => {
-  document.querySelector('.bg-modal').style.display = 'flex';
+document.querySelectorAll('.cardButton').forEach((element) => {
+  element.addEventListener('click', () => {
+    document.querySelector('.bg-modal').style.display = 'flex';
+  });
 });
 
 document.querySelector('.close').addEventListener('click', () => {
