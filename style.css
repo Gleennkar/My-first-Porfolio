@@ -788,7 +788,7 @@ button:active {
   }
 
   .modal-contents {
-    height: 575px; 
+    height: 575px;
     width: 809px;
     background-color: white;
     position: relative;
@@ -799,5 +799,43 @@ button:active {
     width: 806px;
     height: 300px;
     background-size: cover;
+  }
+}
+
+.modal-contents .modal-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.modal-contents .modal-grid > * {
+  grid-column: 1 / -1;
+  grid-row: auto / span 1;
+}
+
+.modal-contents .modal-grid .divider {
+  background-color: #ebecf0;
+  width: 80%;
+  height: 2px;
+  margin: 10px 0;
+  align-self: center;
+  justify-self: center;
+}
+
+@media (min-width: 768px) {
+  .modal-contents .modal-grid {
+    grid-template-columns: 60% 1fr;
+  }
+
+  .modal-contents .modal-grid p {
+    grid-column: 1 / 2;
+    grid-row: auto / span 3;
+  }
+
+  .modal-contents .modal-grid .tech-skills,
+  .modal-contents .modal-grid .divider,
+  .modal-contents .modal-grid .popup-btn {
+    grid-column: 2 / 3;
+    grid-row: auto / span 1;
   }
 }
