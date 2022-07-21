@@ -43,7 +43,7 @@ input.forEach((item) => {
 
 //  formValidation
 const email = document.getElementById('email');
-const form = document.getElementById('input');
+const form = document.getElementById('form-contact');
 const displayMsg = document.getElementById('form-message-error');
 form.addEventListener('submit', (event) => {
   if (email.value !== email.value.toLowerCase()) {
