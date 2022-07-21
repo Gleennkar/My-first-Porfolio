@@ -17,3 +17,26 @@ document.querySelectorAll('.cardButton').forEach((element) => {
 document.querySelector('.close').addEventListener('click', () => {
   document.querySelector('.bg-modal').style.display = 'none';
 });
+
+// local storage
+let userDetails = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+if (localStorage.getItem('savedDetails') !== null) {
+  const finalDetails = localStorage.getItem('savedDetails');
+  userDetails = JSON.parse(finalDetails);
+}
+
+const input = document.querySelectorAll('input,textarea');
+input.forEach((item) => {
+  item.value = userDetails[item.name];
+  item.addEventListener('input', (e) => {
+    userDetails[e.target.name] = e.target.value;
+
+    const userData = JSON.stringify(userDetails);
+    localStorage.setItem('savedDetails', userData);
+  });
+});
