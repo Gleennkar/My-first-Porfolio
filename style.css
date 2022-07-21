@@ -766,7 +766,6 @@ button:active {
     background-color: rgba(193, 199, 208, 0.8);
     right: 0;
     display: none;
-    display: flex;
     justify-content: center;
     padding: 20px 142px;
     box-sizing: border-box;
