@@ -3,7 +3,7 @@
 
 
 
-> In this project, i was able to set up My Portfolio header and headline,works and About section repository through the tools and best practices i learned about in previous steps.
+> In this project, i was able to set up My Portfolio header and headline,works, about section,contact form repository through the tools and best practices i learned about in previous steps.
 
 
 ## Built With
